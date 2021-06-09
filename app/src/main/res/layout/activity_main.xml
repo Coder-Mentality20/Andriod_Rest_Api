@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/product"
+    android:orientation="vertical"
+    android:backgroundTint="@null"
+    android:padding="20dp"
+    >
+  <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="@color/black"
+      android:textSize="40sp"
+      android:text="Weather Update"
+      />
+ <LinearLayout
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:layout_gravity="center"
+     android:orientation="vertical"
+     android:layout_marginTop="100dp"
+     >
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/ptcity"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter City Name"
+        android:inputType="textPersonName"
+        />
+
+     <EditText
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/ptcountry"
+         android:ems="10"
+         android:layout_marginBottom="10dp"
+         android:hint="Enter country code"
+         android:inputType="textPersonName"
+         />
+     <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/btnGet"
+         android:layout_marginBottom="10dp"
+         android:background="#0070c7"
+         android:textColor="@color/white"
+         android:onClick="getWeatherDetails"
+         android:text="Get"
+         app:backgroundTint="@null"
+         />
+     <ScrollView
+         android:layout_height="150dp"
+         android:layout_width="match_parent"
+         >
+         <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:id="@+id/txtResult"
+             />
+     </ScrollView>
+ </LinearLayout>
+
+</LinearLayout>
